@@ -40,6 +40,8 @@ public class PhysicsCalc {
 
         distance = (double) Math.round(Math.hypot(distanceX,distanceY)*10)/10;
 
+        lookupTable();
+
         theta = find(distance);
         return theta;
     }
@@ -119,13 +121,23 @@ public class PhysicsCalc {
 
     }
     public static double find(double distance){
-        //
+        try{
+            return lookupTable.get(distance);
+        }
+        catch(Exception e){
+            if (distance>6.2){
+                return lookupTable.get(6.2);
+            }
+            else if (distance<0.0){
+                return lookupTable.get(0.0);
+            }
+        }
         return 0.0;
     }
 
 
     public static void main(String[] args){
-        double theta = PhysicsCalc.calc(new Translation2d(), DriverStation.Alliance.Red);
+        double theta = PhysicsCalc.calc(new Translation2d(), DriverStation.Alliance.Blue);
         System.out.println("Angle: "+theta);
     }
 }
