@@ -7,7 +7,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class PhysicsCalc {
-    private static Map<Double,Double> lookupTable = new  HashMap<Double, Double>();
+    private static final Map<Double,Double> lookupTable = new  HashMap<>();
 
     public static double calc(Translation2d robotPose, DriverStation.Alliance alliance) {
         //Pose
@@ -137,7 +137,7 @@ public class PhysicsCalc {
 
 
     public static void main(String[] args){
-        double theta = PhysicsCalc.calc(new Translation2d(), DriverStation.Alliance.Blue);
+        double theta = PhysicsCalc.calc(new Translation2d(), DriverStation.Alliance.Red);
         System.out.println("Angle: "+theta);
     }
 }
