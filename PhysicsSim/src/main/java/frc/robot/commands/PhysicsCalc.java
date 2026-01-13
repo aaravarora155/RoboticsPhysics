@@ -10,7 +10,6 @@ public class PhysicsCalc {
     private static final double height = 1.8288; //(m)
 
     //Poses
-    private static final Translation2d robotPose = new Translation2d();
     private static Translation2d hubPose;
 
     //Distance Vector Calculation
@@ -47,6 +46,8 @@ public class PhysicsCalc {
     }
 
     public static void main(String[] args){
+        Translation2d robotPose = new Translation2d();
+
         PhysicsCalc.calc(robotPose, DriverStation.Alliance.Red);
         System.out.println("Welcome to Physics Calculator");
         System.out.println("X:"+distanceX);
