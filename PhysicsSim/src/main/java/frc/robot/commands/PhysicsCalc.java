@@ -3,8 +3,6 @@ package frc.robot.commands;
 import edu.wpi.first.math.geometry.Translation2d;
 import edu.wpi.first.wpilibj.DriverStation;
 
-import java.util.Optional;
-
 public class PhysicsCalc {
     //Unused Constants
     private static final double gravity = 9.8;
@@ -41,7 +39,12 @@ public class PhysicsCalc {
 
         distance = (double) Math.round(Math.hypot(distanceX,distanceY)*100)/100;
     }
+    public static void lookupTable(){
 
+    }
+    public static void runRegression(double distance){
+
+    }
 
     public static void main(String[] args){
         PhysicsCalc.calc(robotPose, DriverStation.Alliance.Red);
