@@ -55,6 +55,7 @@ public class PhysicsCalc {
         * Farthest point is 6.2m
         * */
 
+        //0.0-0.9
         lookupTable.put(0.0, 0.0);
         lookupTable.put(0.1, 0.0);
         lookupTable.put(0.2, 0.0);
@@ -65,6 +66,8 @@ public class PhysicsCalc {
         lookupTable.put(0.7, 0.0);
         lookupTable.put(0.8, 0.0);
         lookupTable.put(0.9, 0.0);
+
+        //1.0-1.9
         lookupTable.put(1.0, 0.0);
         lookupTable.put(1.1, 0.0);
         lookupTable.put(1.2, 0.0);
@@ -75,6 +78,8 @@ public class PhysicsCalc {
         lookupTable.put(1.7, 0.0);
         lookupTable.put(1.8, 0.0);
         lookupTable.put(1.9, 0.0);
+
+        //2.0-2.9
         lookupTable.put(2.0, 0.0);
         lookupTable.put(2.1, 0.0);
         lookupTable.put(2.2, 0.0);
@@ -85,6 +90,8 @@ public class PhysicsCalc {
         lookupTable.put(2.7, 0.0);
         lookupTable.put(2.8, 0.0);
         lookupTable.put(2.9, 0.0);
+
+        //3.0-3.9
         lookupTable.put(3.0, 0.0);
         lookupTable.put(3.1, 0.0);
         lookupTable.put(3.2, 0.0);
@@ -95,6 +102,8 @@ public class PhysicsCalc {
         lookupTable.put(3.7, 0.0);
         lookupTable.put(3.8, 0.0);
         lookupTable.put(3.9, 0.0);
+
+        //4.0-4.9
         lookupTable.put(4.0, 0.0);
         lookupTable.put(4.1, 0.0);
         lookupTable.put(4.2, 0.0);
@@ -105,6 +114,8 @@ public class PhysicsCalc {
         lookupTable.put(4.7, 0.0);
         lookupTable.put(4.8, 0.0);
         lookupTable.put(4.9, 0.0);
+
+        //5.0-5.9
         lookupTable.put(5.0, 0.0);
         lookupTable.put(5.1, 0.0);
         lookupTable.put(5.2, 0.0);
@@ -115,6 +126,8 @@ public class PhysicsCalc {
         lookupTable.put(5.7, 0.0);
         lookupTable.put(5.8, 0.0);
         lookupTable.put(5.9, 0.0);
+
+        //6.0-6.9
         lookupTable.put(6.0, 0.0);
         lookupTable.put(6.1, 0.0);
         lookupTable.put(6.2, 0.0);
