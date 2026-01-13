@@ -46,9 +46,7 @@ public class PhysicsCalc {
     }
 
     public static void main(String[] args){
-        Translation2d robotPose = new Translation2d();
-
-        PhysicsCalc.calc(robotPose, DriverStation.Alliance.Red);
+        PhysicsCalc.calc(new Translation2d(), DriverStation.Alliance.Red);
         System.out.println("Welcome to Physics Calculator");
         System.out.println("X:"+distanceX);
         System.out.println("Y:"+distanceY);
