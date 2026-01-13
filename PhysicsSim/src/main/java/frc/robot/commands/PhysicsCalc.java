@@ -45,6 +45,9 @@ public class PhysicsCalc {
         theta = find(distance);
         return theta;
     }
+    public static double runRegression(double distance){
+        return 0.0;
+    }
     public static void lookupTable(){
         /*
         * Key: Distance From Hub (double)
@@ -54,6 +57,14 @@ public class PhysicsCalc {
         * Closest point is 0m away
         * Farthest point is 6.2m
         * */
+
+
+        //Uses loops and runs calculations once at compile time
+        for (double i=0;i<=6.2;i+=0.1){
+            lookupTable.put(i,runRegression(i));
+        }
+
+        //Calculated manually and entered
 
         //0.0-0.9
         lookupTable.put(0.0, 0.0);
