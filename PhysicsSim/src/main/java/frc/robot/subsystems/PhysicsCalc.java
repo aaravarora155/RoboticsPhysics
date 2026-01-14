@@ -1,4 +1,4 @@
-package frc.robot.commands;
+package frc.robot.subsystems;
 
 import edu.wpi.first.math.geometry.Translation2d;
 import edu.wpi.first.wpilibj.DriverStation;
@@ -157,6 +157,9 @@ public class PhysicsCalc {
             }
         }
         return 0.0;
+    }
+    public static void adjustAngle(){
+
     }
 
 
